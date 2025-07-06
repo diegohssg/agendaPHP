@@ -1,0 +1,204 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  padding: 30px;
+  color: #333;
+}
+
+input   {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 50%;
+}
+
+div{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/* === Título principal === */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+    
+}
+
+/* === Formulário principal === */
+form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+form input,
+form textarea,
+form button,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+form button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #2980b9;
+}
+
+form a {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+/* === Botões de filtro === */
+.filtros {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filtros button {
+  padding: 8px 16px;
+  background: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.filtros button:hover {
+  background: #27ae60;
+}
+
+/* === Tabela de agendamentos === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  color: #444;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* === Botões de ação (editar, excluir, concluir) === */
+.btn-editar,
+.btn-excluir,
+.btn-concluir {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+  margin-right: 5px;
+  transition: 0.2s ease;
+}
+
+.btn-editar {
+  background-color: #f39c12;
+}
+.btn-editar:hover {
+  background-color: #d35400;
+}
+
+.btn-excluir {
+  background-color: #e74c3c;
+}
+.btn-excluir:hover {
+  background-color: #c0392b;
+}
+
+.btn-concluir {
+  background-color: #2ecc71;
+}
+.btn-concluir:hover {
+  background-color: #27ae60;
+}
+
+/* === Status de agendamento === */
+.status-concluida {
+  background-color: #e0ffe0;
+}
+
+.status-pendente {
+  background-color: #fff;
+}
+
+/* === Responsivo === */
+@media (max-width: 768px) {
+  th, td {
+    font-size: 13px;
+  }
+
+  .filtros button {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  form input, form textarea, form button {
+    font-size: 14px;
+  }
+}
+
+.filtroTabela {
+    margin: 0 auto;
+    justify-content: center;
+}
